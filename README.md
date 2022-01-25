@@ -1,6 +1,6 @@
 # API_in_Python_using_Flask
 
-###########
+############
 This application is written using Python 3.9, tested to run on a Mac OS machine.
 It is assumed that you would already have python installed on your machine
 App Ver 1.0
