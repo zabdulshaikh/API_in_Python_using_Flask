@@ -8,9 +8,9 @@ Created for technical exercise for Aura.
 
 
 
-###########
+############
 *RUN
-###########
+############
 To run this Script, follow the below steps.
 
 1) Assuming you have already unzipped the package.
@@ -30,10 +30,10 @@ health of the application       -> http://127.0.0.1:5000/health
 
 
 
-###########
+############
 *TEST
 NOTE: the steps mentioned in the (*RUN) section should have been carried out prior to testing, else all test cases will fail
-###########
+############
 To run this Script, follow the below steps.
 
 1) Assuming you have already unzipped the package.
