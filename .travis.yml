@@ -14,3 +14,4 @@ after_script:
   - curl http://localhost:5000/metadata
   - curl http://localhost:5000
   - python API_Testing.py
+  - netstat -an | grep 5000
