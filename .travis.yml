@@ -13,3 +13,4 @@ after_script:
   - |
     python app.py &
     APP_PID=$!
+  - curl localhost:5000/metadata
