@@ -19,8 +19,8 @@ To run this Script, follow the below steps.
 3) Run the below command to install the pre-requisites for the Script
 ---> pip install -r requirements.txt -t .
 4) Run the Script using the following command
----> python3 API_Main.py
----> python API_Main.py  (If the above fails try with this)
+---> python3 app.py
+---> python app.py  (If the above fails try with this)
 5) Without Quiting the script, Open a Browser
 6) In the address bar of your browser, type the following url combinations
 root                            -> http://127.0.0.1:5000/
