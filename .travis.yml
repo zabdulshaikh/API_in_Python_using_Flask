@@ -13,5 +13,6 @@ after_script:
   - echo "Testing the app"
   - curl http://localhost:5000/metadata
   - curl http://localhost:5000
+  - curl http://127.0.0.1:5000
   - python API_Testing.py
   - netstat -an | grep 5000
