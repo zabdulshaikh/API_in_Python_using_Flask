@@ -8,8 +8,6 @@ install:
 script:
   - echo "Starting the app"
   - python app.py &
-
-after_script:
   - echo "Testing the app"
   - curl http://localhost:5000/metadata
   - curl http://localhost:5000
