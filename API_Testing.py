@@ -11,7 +11,7 @@ def Test_API(URL):
         if status_code == 200:
             return str(URL) + ": Success"
         else:
-            return str(URL) + ": Failed"
+            return False
     except Exception as e: 
         return str("The testing encountered an exception error: ") + str(e)
 
