@@ -6,11 +6,10 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - echo "API testing"
+  - echo "Starting the app"
+  - python app.py &
 
 after_script:
-  # start the web app
-  - |
-    python app.py &
-    APP_PID=$!
+  - echo "Testing the app"
   - curl localhost:5000/metadata
+  - python API_Testing.py
