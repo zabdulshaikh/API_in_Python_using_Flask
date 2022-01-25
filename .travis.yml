@@ -6,6 +6,12 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
+  - sudo iptables -A INPUT -i lo -j ACCEPT
+  - sudo iptables -A OUTPUT -o lo -j ACCEPT
+  - sudo iptables -A INPUT -p tcp --dport 5000 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+  - sudo iptables -A OUTPUT -p tcp --sport 5000 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+  - sudo iptables -A INPUT -p tcp --dport 5000 -j ACCEPT
+  - sudo iptables -A OUTPUT -p tcp --sport 5000 -j ACCEPT
   - echo "Starting the app"
   - python app.py &
   - echo "Testing the app"
